@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inka Yaku</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/img/logo.jpg">
+</head>
+<body>
+    <div class="first">
+        <div class="content">
+            <h1 class="title">INKA YAKU</h1>
+            <h3 class="subtitle">Licoreria y bodegas industriales</h3>
+            <a href="#mision">ver más</a>
+        </div>
+        <div class="imgContainer">
+            <img src="assets/img/logo.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="info" id="mision" >
+        <h1 onclick="p1()">MISIÓN</h1>
+        <p id="p">Nuestra misión es llevar la diversión embotellada
+           a cada rincón del Perú, además de garantizar una
+           bebida de calidad que satisfaga sus necesidades 
+           a un precio justo.</p>
+    </div>
+    <div class="info">
+        <h1 onclick="p2()">VISIÓN</h1>
+        <p id="p2">La visión de nuestra empresa es ser líder en nuestra
+           categoría, ser exitosa, difundir la marca en suelo 
+           peruano primero y luego poder expandirla con diferentes
+           productos, presentando una gran variedad en el mercado.</p>
+    </div>
+    
+    <div class="goals">
+        <h1 onclick="p3()">OBJETIVOS</h1>
+        <div class="divGroup" id="p3">
+            <div class="general">
+                <h1>GENERAL</h1>
+                <p>
+                    Brindar un producto de calidad, a base de frutas 
+                    con licor, a través de la selección de sus 
+                    ingredientes para el consumidor. 
+                </p>
+            </div>
+            <div class="specific">
+                <h1>ESPECIFICO</h1>
+                <p>
+                    -	Cumplir con lo más altos estándares de calidad en la fabricación de nuestros productos.<br> <br>
+                    -	Posicionarnos en el mercado como una de las mejores marcas en venta de bebidas.<br><br>
+                    -	Implementar un negocio de importación y exportación.<br><br>
+                    -	Garantizar productos con ricos sabor, conservando al máximo sus propiedades naturales.<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="assets/js/scroll.js"></script>
+    <script>
+        function p1() {
+            var p = document.getElementById("p");
+            if (p.style.display === "none") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+        }
+        function p2() {
+            var p = document.getElementById("p2");
+            if (p.style.display === "none") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+        }
+        function p3() {
+            var p = document.getElementById("p3");
+            if (p.style.display === "none") {
+                p.style.display = "flex";
+            } else {
+                p.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

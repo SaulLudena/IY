@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20% 0 40% 0;
+    animation: 2s opacidad;
+}
+.first .content .title{
+    font-size: 90px;
+}
+.first .content .subtitle{
+    margin:0 0 30px 0;
+}
+.first .content  a{
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(63, 63, 63);
+}
+.first .imgContainer img{
+    width: 400px;
+    height: auto;
+}
+
+.info{
+    padding: 5% 0 10% 0;
+    width: 50%;
+    margin: auto;
+}
+.info h1{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.info p{
+    text-align: center;
+    padding-top: 40px;
+    width: 70%;
+    margin: auto;
+    font-size: 30px;
+    display: none;
+    animation: 1s opacidad;
+}
+.goals{
+    width: 50%;
+    margin: auto;
+}
+.goals h1{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    animation: 1s opacidad;
+}
+.goals .divGroup{
+    display: none;
+    margin: auto;
+    justify-content: space-around;
+    padding: 70px 0 0 0 ;
+}
+.goals .divGroup .general,.specific{
+    width: 50%;
+    margin: 0 40px;
+}
+.goals .divGroup p{
+    padding: 10px 0 0 0 ;
+    font-size: 30px;
+    
+}
+
+@keyframes opacidad{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width:799px){
+    .first{
+        flex-direction: column;
+        text-align: center;
+    }
+    .first .imgContainer img{
+        margin-top: 50px;
+    }
+    .info{
+
+        width: 100%;
+
+    }
+    .goals{
+        width: 10   0%;
+
+    }
+}
