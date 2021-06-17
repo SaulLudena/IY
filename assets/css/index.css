@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     width: 90%;
     max-width: 1400px;
     margin: auto;
@@ -32,9 +33,17 @@ body{
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgb(63, 63, 63);
 }
+.otherimgcontainer{
+    margin: 10% 0 0 0 ;
+    text-align: center;
+}
+.otherimgcontainer img{
+    border-radius: 10px;
+}
 .first .imgContainer img{
     width: 400px;
     height: auto;
+
 }
 
 .info{
@@ -47,10 +56,11 @@ body{
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-weight: lighter;
+    font-weight: bolder;
     margin: auto;
     text-align: center;
     cursor: pointer;
+
 }
 .info p{
     text-align: center;
@@ -59,6 +69,7 @@ body{
     margin: auto;
     font-size: 30px;
     display: none;
+    font-weight: bolder;
     animation: 1s opacidad;
 }
 .goals{
@@ -70,7 +81,7 @@ body{
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-weight: lighter;
+    font-weight: bolder;
     margin: auto;
     text-align: center;
     cursor: pointer;
@@ -90,7 +101,7 @@ body{
 .goals .divGroup p{
     padding: 10px 0 0 0 ;
     font-size: 30px;
-    
+    font-weight: bolder;
 }
 
 @keyframes opacidad{
@@ -108,7 +119,7 @@ body{
         text-align: center;
     }
     .first .imgContainer img{
-        margin-top: 50px;
+        margin-top: 50%;
     }
     .info{
 
@@ -116,7 +127,10 @@ body{
 
     }
     .goals{
-        width: 10   0%;
-
+        width: 100%;
+    }
+    .goals .divGroup{
+        flex-direction: column;
+        
     }
 }
